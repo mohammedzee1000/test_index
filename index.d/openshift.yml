@@ -1,0 +1,37 @@
+Projects:
+  - id          : 1
+    app-id      : openshift
+    job-id      : origin-base
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/base
+    git-branch  : release-1.5
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.5
+    depends-on  : centos/centos:latest
+
+  - id          : 2
+    app-id      : openshift
+    job-id      : origin-custom-docker-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/custom-docker-builder/
+    git-branch  : release-1.5
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.5
+    depends-on  : 
+      - centos/centos:latest
+      - openshift/origin-base:v1.5
+
+  - id          : 3
+    app-id      : openshift
+    job-id      : openvswitch
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/openvswitch
+    git-branch  : release-1.5
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.5
+    depends-on  : 
+       - centos/centos:latest
+       - openshift/origin-base:v1.5
