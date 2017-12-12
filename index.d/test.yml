@@ -2,9 +2,10 @@ Projects:
   - id: 1
     app-id: test
     job-id: some-container
-    desired-tag: latest
+    desired-tag: latest192.168.121.48
     git-url: https://github.com/mohammedzee1000/custom_build_context
     git-path: container/
     git-branch: master
     build-context: ../
+    target-file: Dockerfile
     depends-on: null
