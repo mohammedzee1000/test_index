@@ -2,7 +2,7 @@ Projects:
   - id: 1
     app-id: test
     job-id: some-container
-    desired-tag: latest192.168.121.48
+    desired-tag: latest
     git-url: https://github.com/mohammedzee1000/custom_build_context
     git-path: container/
     git-branch: master
