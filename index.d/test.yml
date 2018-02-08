@@ -71,3 +71,63 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
     depends-on: null
+
+  - id: 7
+    app-id: test
+    job-id: memcached
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: memcached/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+    
+  - id: 8
+    app-id: test
+    job-id: mongo
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: mongodb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+    
+  - id: 9
+    app-id: test
+    job-id: qpid
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: qpid/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+    
+  - id: 10
+    app-id: test
+    job-id: ssh
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: ssh/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+    
+  - id: 11
+    app-id: test
+    job-id: wordpress
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: wordpress/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
