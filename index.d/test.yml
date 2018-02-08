@@ -130,4 +130,16 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: null
+
+  - id: 12
+    app-id: test
+    job-id: wordpress
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: wordpress/centos7
+    target-file: Dockerfile
+    desired-tag: haha
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
