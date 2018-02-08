@@ -33,7 +33,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: null
     
   - id: 4
     app-id: test
@@ -45,4 +45,29 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: null
+
+    
+  - id: 5
+    app-id: test
+    job-id: httpd
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: httpd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+    
+  - id: 6
+    app-id: test
+    job-id: python
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: python/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
